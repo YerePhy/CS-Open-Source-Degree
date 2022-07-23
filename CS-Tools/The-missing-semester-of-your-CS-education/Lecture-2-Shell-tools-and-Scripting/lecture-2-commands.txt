@@ -1,0 +1,73 @@
+COMMANDS
+
+foo=bar: assing bar to variable foo.
+
+echo $foo: print the value of foo.
+
+echo "Value is $foo": variable interpolation (prints Value is bar).
+
+defining a fucntion:
+	
+	1. Open a new file: vim mcd.sh
+	2. Define function:
+
+		mcd() {
+			mkdir -p "$1"
+			cd "$1"
+		}
+		
+		-> "$1": first command line argument passed.
+
+	3. Execute the content of a the file: source mcd.sh
+
+$?: gives the error code of the previous command.
+
+$_: last argument of the previous command. 
+
+!!: gives the last command introduced.
+
+true: always have 0 error code.
+
+false: always have 1 error code.
+
+foo=$(pwd): get the output of pwd into foo.
+
+$(command): the output of command.
+
+<(): process substitution, feeds the output of processes into stdin of another process. Example:
+
+	cat <(ls) <(ls ..)
+
+*: regexp matching anything.
+
+?: regexp matching one character.
+
+file.{x,y} -> file.x, file.y.
+
+diff: shows the difference between two files, example:
+
+	diff <(ls foo) <(ls bar)
+
+shellcheck: tool for debugging, syntax errors and related.
+
+tldr: command for explanatory example of commands.
+
+find: find files and directories, example for removing "*.tmp"-like files:
+	
+	find . -name "*.tmp" -exec rm {} \;
+
+locate: looks for paths in te index filesytem that have a substring.
+
+grep: look for regular expressions, it can look fo regular expressions in a whole directory, example:
+	
+	grep -R foobar .
+
+ripgrep: visual enhanced grep.
+
+history: shows commands history, example
+	
+	history | grep convert 
+
+fzf: interactive grep.
+
+autojump: handy way of going to frequent directories
