@@ -1,0 +1,41 @@
+COMMANDS
+
+foo=bar: assing bar to variable foo.
+
+echo $foo: print the value of foo.
+
+echo "Value is $foo": variable interpolation (prints Value is bar).
+
+defining a fucntion:
+	
+	1. Open a new file: vim mcd.sh
+	2. Define function:
+
+		mcd() {
+			mkdir -p "$1"
+			cd "$1"
+		}
+		
+		-> "$1": first command line argument passed.
+
+	3. Execute the content of a the file: source mcd.sh
+
+$?: gives the error code of the previous command.
+
+$_: last argument of the previous command. 
+
+!!: gives the last command introduced.
+
+true: always have 0 error code.
+
+false: always have 1 error code.
+
+foo=$(pwd): get the output of pwd into foo.
+
+$(command): the output of command.
+
+<(): process substitution, feeds the output of processes into stdin of another process. Example:
+
+	cat <(ls) <(ls ..)
+
+>> min 11:49
