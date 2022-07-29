@@ -70,4 +70,8 @@ history: shows commands history, example
 
 fzf: interactive grep.
 
-autojump: handy way of going to frequent directories
+autojump: handy way of going to frequent directories.
+
+tree: print file structure of a directory.
+
+nnn: CLI file manager.
