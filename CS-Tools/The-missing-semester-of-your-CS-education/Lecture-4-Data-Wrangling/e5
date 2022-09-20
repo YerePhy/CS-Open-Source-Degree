@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+cat <(journalctl -b -1 -o cat | sort | uniq -u) <(journalctl -b -2 -o cat | sort | uniq -u) <(journalctl -b -3 -o cat | sort | uniq -u) | sort | uniq -c | awk '{if ($1 < 3) {$1=""; print $0}}'
+
