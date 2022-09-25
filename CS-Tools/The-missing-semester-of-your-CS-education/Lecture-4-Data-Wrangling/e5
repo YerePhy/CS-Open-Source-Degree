@@ -1,7 +1,7 @@
 #!/bin/bash
 
-paste -d " " \
+awk 'FNR==NR{f1[FNR]=$0; next}{if (NF!=0 && f1[FNR]!="") print $0", "f1[FNR]}' \
 <(curl -s https://ucr.fbi.gov/crime-in-the-u.s/2016/crime-in-the-u.s.-2016/topic-pages/tables/table-1 | pup --color "div#table-data-container td.group2 text{}") \
 <(curl -s https://ucr.fbi.gov/crime-in-the-u.s/2016/crime-in-the-u.s.-2016/topic-pages/tables/table-1 | pup --color "div#table-data-container td.group1 text{}") \
-| sed 's/,//g;s/\s$//g;s/\s/,/g;/^$/d' | R --slave -e 'x <- file("stdin"); t <- read.csv(x); summary(t)'
+| sed 's/,//g;s/\s$//g;s/\s/,/g' | R --slave -e 'x <- file("stdin"); t <- read.csv(x); summary(t)'
 
