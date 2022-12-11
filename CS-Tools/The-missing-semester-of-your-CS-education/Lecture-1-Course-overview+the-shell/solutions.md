@@ -69,7 +69,6 @@ echo $(stat /tmp/missing/semester -c '%y') | cut -d' ' -f1
 10. Write a command that reads out your laptop battery’s power level or your desktop machine’s CPU temperature from /sys. Note: if you’re a macOS user, your OS doesn’t have sysfs, so you can skip this exercise.
 
 ```
-	paste <(cat /sys/class/thermal/thermal_zone*/type) <(cat /sys/class/thermal/thermal_zone*/temp) | column -s $'\t' -t | sed 's/\(.\)..$/.\1°C/'
-	
-	cat /sys/class/power_supply/BAT1/capacity
+paste <(cat /sys/class/thermal/thermal_zone*/type) <(cat /sys/class/thermal/thermal_zone*/temp) | column -s $'\t' -t | sed 's/\(.\)..$/.\1°C/'
+cat /sys/class/power_supply/BAT1/capacity
 ```
