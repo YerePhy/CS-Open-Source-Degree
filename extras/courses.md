@@ -21,7 +21,8 @@ Courses | Duration | Effort
 [Object-Oriented Programming with Java](https://java-programming.mooc.fi/)| 14 weeks | 10 hours/week
 [Introduction to Programming with MATLAB](https://www.coursera.org/learn/matlab)| - | -
 [Introduction to Functional Programming](https://www.edx.org/course/introduction-functional-programming-delftx-fp101x-0)| 7 weeks | 4-6 hours/week
-[The Structure and Interpretation of Computer Programs](http://cs61a.org/) | - | -
+[The Structure and Interpretation of Computer Programs (2022, Python)](http://cs61a.org/) | - | -
+[The Structure and Interpretation of Computer Programs (2011, Scheme)](https://romanbird.github.io/sicp/) | - | -
 [Introduction to Haskell](https://www.seas.upenn.edu/~cis194/fall16/) | 14 weeks | 4 hours/week
 
 ## Math
@@ -33,11 +34,13 @@ Courses | Duration | Effort
 [High School Math](https://www.khanacademy.org/math/high-school-math) | - | -
 [Precalculus](https://www.futurelearn.com/courses/precalculus) | 5 weeks | 6 hours/week
 [Advanced Precalculus](https://www.futurelearn.com/courses/advanced-precalculus) | 4 weeks | 5 hours/week
+[Calculus Applied!](https://www.edx.org/course/calculus-applied) | 10 Weeks | 6hours/week
 [Introduction to Probability and Data](https://www.coursera.org/learn/probability-intro)| - | -
 [Linear Algebra (Strang)](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/index.htm) | - | -
 [Introduction to Computational Thinking](https://computationalthinking.mit.edu/Spring21/#introduction_to_computational_thinking) | - | -
 [Multivariable Calculus](https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/index.htm) | 13 weeks | 12 hours/week
 [Introduction to Probability - The Science of Uncertainty](https://www.edx.org/course/introduction-probability-science-mitx-6-041x-2) | 18 weeks | 12 hours/week | [Multivariable Calculus](https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/index.htm)
+[Matrix Methods In Data Analysis, Signal Processing, And Machine Learning](https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/) | - | -
 
 ## Systems
 
@@ -52,6 +55,7 @@ Courses | Duration | Effort
 [Introduction to Operating Systems](https://www.udacity.com/course/introduction-to-operating-systems--ud923)| 8 weeks | 5-8 hours/week
 [Advanced Operating Systems](https://www.udacity.com/course/advanced-operating-systems--ud189)| 5 weeks | 5-8 hours/week
 [Computer Networking](https://www.udacity.com/course/computer-networking--ud436) | 12 weeks | 5-8 hours/week
+Distributed Systems - [Playlist](https://www.youtube.com/playlist?list=PLrw6a1wE39_tb2fErI4-WkMbsvGQk9_UB), [Course site](http://nil.csail.mit.edu/6.824/2020/schedule.html), [Self-studying 6.824](https://lieuzhenghong.com/mit_6.824_self_study/) [6.824 Discord group for further help](https://discord.gg/KbhkEqpBqC) | - | -
 
 ## Theory
 
@@ -68,6 +72,7 @@ Courses | Duration | Effort
 [Statistical Mechanics: Algorithms and Computations](https://www.coursera.org/learn/statistical-mechanics/) | - | -
 [Approximation Algorithms Part I](https://www.coursera.org/learn/approximation-algorithms-part-1/) | - | -
 [Approximation Algorithms Part II](https://www.coursera.org/learn/approximation-algorithms-part-2/) | - | -
+[Design And Analysis Of Algorithms](https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/) | - | -
 
 ## Applications
 

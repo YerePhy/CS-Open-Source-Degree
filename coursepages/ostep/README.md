@@ -15,7 +15,7 @@ In order to satisfy OSSU's curricular guidelines, you should either watch all th
 
 ## Prerequisites
 
-This class requires a lot of experience programming in C. You should finish one of the C books listed in the ***resources below*** *before* starting this course; if you try to learn C at the same time as the course material, you're likely to feel overwhelmed. If you haven't used C before, you should expect to spend a lot of time on this; it's hard to predict how long it might take for each person, but a rough estimate might be 8-10 hours per week for 3-5 weeks. You can always learn C alongside another OSSU course or even redo the exercises for other courses in C to gain practice with it.
+This class requires a lot of experience programming in C. You should finish one of the C books listed in the [resources below](#c) *before* starting this course; if you try to learn C at the same time as the course material, you're likely to feel overwhelmed. If you haven't used C before, you should expect to spend a lot of time on this; it's hard to predict how long it might take for each person, but a rough estimate might be 8-10 hours per week for 3-5 weeks. You can always learn C alongside another OSSU course or even redo the exercises for other courses in C to gain practice with it.
 
 You should also finish both parts of Nand2Tetris before starting this course. OSTEP focuses on the real-world x86 and x86_64 architectures, so you'll have to fill in some gaps in order to translate the concepts you learned in Nand2Tetris to a new architecture. You can do that with the x86 resources below, but note that they all assume you know C, so learn that first. This should take around 6-8 hours in total.
 
@@ -113,7 +113,7 @@ CS 50 doesn't quite cover enough C for OSTEP, but if you've already taken CS 50,
 Additional (***optional***) resources include:
 * [CS 50 Manual Pages](https://manual.cs50.io): a great reference for looking up C library functions; most functions include both the usual manual as well as a beginner-friendly "less comfortable" option (just note that the "less comfortable" version uses `string` as an alias for `char *`.)
 * [cdecl](https://cdecl.org): a tool to translate C gibberish into English.
-* [C track on exercism.io](https://exercism.io/tracks/C): additional practice exercises.
+* [C track on exercism.org](https://exercism.org/tracks/C): additional practice exercises.
 * [Secure Coding Practices in C and C++](https://www.amazon.com/dp/0321822137): if you want to understand why other C resources are so unsafe.
 * [*The C Programming Language*](https://www.amazon.com/dp/0131103628): the original book on C by its creators. Too outdated for OSTEP, but a good read if you manage to find a copy.
 
@@ -143,6 +143,8 @@ You don't need to read anything about xv6 until after you start OSTEP; in fact, 
 The xv6 authors provide a [book](https://pdos.csail.mit.edu/6.828/2018/xv6/book-rev11.pdf) that you can read alongside the source code. There's also a handy line-numbered [PDF version](https://pdos.csail.mit.edu/6.828/2018/xv6/xv6-rev11.pdf) of the code with an index to see exactly where each function or constant gets used.
 
 However, that book glosses over a lot of the details in the code that you might find challenging, including the advanced C features used, the x86 architecture- specific instructions, and the concurrency aspects (if you haven't finished that section of OSTEP before starting the xv6 projects). To solve this problem, we provide an [annotated guide to xv6](https://github.com/palladian1/xv6-annotated) that goes over the entire xv6 code and analyzes it line-by-line with explanations of the C features, hardware specs, and x86 conventions used. That means it's longer than the official xv6 book, so you don't have to read all of it (and you can probably skip the optional sections unless you care about device drivers), but you can use it as a reference if you're scratching your head about some part of the code.
+
+[Here](https://github.com/YehudaShapira/xv6-explained) is another in-depth explanation of the xv6 code.
 
 Also [here](https://www.youtube.com/playlist?list=PLbtzT1TYeoMhTPzyTZboW_j7TPAnjv9XB) is an excellent video series walking through much of the xv6 code.
 
