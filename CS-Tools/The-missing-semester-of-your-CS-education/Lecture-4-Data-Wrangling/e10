@@ -1,3 +1,0 @@
-#/bin/bash
-
-cat /usr/share/dict/words | tr '[:upper:]' '[:lower:]' | grep -E "\b([^a]*a){3}.*\b" | grep -Ev "'s" 

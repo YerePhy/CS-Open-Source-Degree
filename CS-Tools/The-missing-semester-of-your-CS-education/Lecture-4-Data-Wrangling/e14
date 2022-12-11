@@ -1,4 +1,0 @@
-#/bin/bash
-
-cat /usr/share/dict/words | tr "[:upper:]" "[:lower:]" |  grep -E "\b([^a]*a){2}.*\b" | grep -Ev "'s" | sed -E 's/.+([a-z]{2})/\1/' | sort | uniq -c | sort -n | wc -l
-

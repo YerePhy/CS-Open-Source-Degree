@@ -1,7 +1,0 @@
-#/bin/bash
-
-cat /usr/share/dict/words | tr "[:upper:]" "[:lower:]" |  grep -E "\b([^a]*a){3}.*\b" | grep -Ev "'s" | sed -E 's/.+([a-z]{2})/\1/' | sort | uniq > letters 
-
-source ./letters.sh > all_letters 
-
-diff --changed-group-format="%<" --unchanged-group-format="" all_letters letters

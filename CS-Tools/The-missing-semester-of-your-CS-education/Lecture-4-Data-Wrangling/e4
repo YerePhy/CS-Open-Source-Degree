@@ -1,4 +1,0 @@
-#/bin/bash
-
-journalctl | grep -E 'Startup finished in (\w\.?)+ \(kernel\) \+' | tail -n 10 | sed -E 's/(.*) = (.*s)\./\2/g' | awk '{if ($0 ~ /^(.*)min (.*)s$/) {print (60 * $1) + $2} else {gsub("s", "", $0); print $0}}' | R --slave -e 'x <- scan(file="stdin", quiet=TRUE); summary(x)'
-
