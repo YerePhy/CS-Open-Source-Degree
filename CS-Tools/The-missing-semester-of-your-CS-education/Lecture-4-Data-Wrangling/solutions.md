@@ -1,3 +1,5 @@
+## Solutions of Lecture 4
+
 2. Find the number of words (in /usr/share/dict/words) that contain at least three a's and don’t have a 's ending:
 
 ```

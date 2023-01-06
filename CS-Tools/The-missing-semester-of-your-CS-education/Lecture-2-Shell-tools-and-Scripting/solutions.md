@@ -1,3 +1,5 @@
+## Solutions of Lecture 2
+
 1. Read man ls and write an ls command that lists files in the following manner
 
 Includes all files, including hidden files
