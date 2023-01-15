@@ -2,25 +2,6 @@ import random
 
 
 @profile
-def test_sorted(fn, iters=1000):
-    for i in range(iters):
-        l = [random.randint(0, 100) for i in range(0, random.randint(0, 50))]
-        assert fn(l) == sorted(l)
-
-
-@profile
-def insertionsort(array):
-    for i in range(len(array)):
-        j = i-1
-        v = array[i]
-        while j >= 0 and v < array[j]:
-            array[j+1] = array[j]
-            j -= 1
-        array[j+1] = v
-    return array
-
-
-@profile
 def quicksort(array):
     if len(array) <= 1:
         return array
@@ -52,5 +33,6 @@ def quicksort_inplace(array, low=0, high=None):
 
 
 if __name__ == '__main__':
-    for fn in [quicksort, quicksort_inplace, insertionsort]:
-        test_sorted(fn)
+    l = [random.randint(0, 100) for i in range(0, 1000)]
+    for fn in [quicksort, quicksort_inplace]:
+        fn(l)
