@@ -120,3 +120,31 @@ Challenge: Use perf to look at the cycle counts and cache hits and misses of eac
 ```
 # TODO
 ```
+
+6. Here’s some (arguably convoluted) Python code for computing Fibonacci numbers using a function for each number.
+
+```
+#!/usr/bin/env python
+def fib0(): return 0
+
+def fib1(): return 1
+
+s = """def fib{}(): return fib{}() + fib{}()"""
+
+if __name__ == '__main__':
+
+    for n in range(2, 10):
+        exec(s.format(n, n-1, n-2))
+    # from functools import lru_cache
+    # for n in range(10):
+    #     exec("fib{} = lru_cache(1)(fib{})".format(n, n))
+    print(eval("fib9()"))
+```
+
+Put the code into a file and make it executable. Install prerequisites: `pycallgraph` and `graphviz`. (If you can run `dot`, you already have GraphViz.) Run the code as is with `pycallgraph graphviz -- ./fib.py` and check the `pycallgraph.png` file.
+
+How many times is fib0 called? 21. 
+
+[Graph generated before memoization:](./pycallgraph.png)
+
+
