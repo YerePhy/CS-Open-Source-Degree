@@ -8,7 +8,7 @@ if __name__ == '__main__':
 
     for n in range(2, 10):
         exec(s.format(n, n-1, n-2))
-    # from functools import lru_cache
-    # for n in range(10):
-    #     exec("fib{} = lru_cache(1)(fib{})".format(n, n))
+    from functools import lru_cache
+    for n in range(10):
+        exec("fib{} = lru_cache(1)(fib{})".format(n, n))
     print(eval("fib9()"))

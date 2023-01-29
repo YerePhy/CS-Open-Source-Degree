@@ -143,8 +143,11 @@ if __name__ == '__main__':
 
 Put the code into a file and make it executable. Install prerequisites: `pycallgraph` and `graphviz`. (If you can run `dot`, you already have GraphViz.) Run the code as is with `pycallgraph graphviz -- ./fib.py` and check the `pycallgraph.png` file.
 
-How many times is fib0 called? 21. 
+How many times is `fib0` called? 21 times.
 
-![Graph generated before memoization:](./pycallgraph_0.png)
+![Graph generated before memoization:](./pycallgraph_no_memoization.png)
 
+We can do better than that by memoizing the functions. Uncomment the commented lines and regenerate the images. How many times are we calling each `fibN` function now? 1 time.
+
+![Graph generated after memoization:](./pycallgraph_memoization.png)
 
