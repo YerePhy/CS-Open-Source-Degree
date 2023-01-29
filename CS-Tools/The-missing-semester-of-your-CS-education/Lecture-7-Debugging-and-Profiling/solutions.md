@@ -145,6 +145,6 @@ Put the code into a file and make it executable. Install prerequisites: `pycallg
 
 How many times is fib0 called? 21. 
 
-[Graph generated before memoization:](./pycallgraph.png)
+![Graph generated before memoization:](./pycallgraph.png)
 
 
