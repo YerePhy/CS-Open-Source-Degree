@@ -158,3 +158,25 @@ We can do better than that by memoizing the functions. Uncomment the commented l
 lsof | grep 'python .*LISTEN)' | awk '{ print $2 }' | kill
 ```
 
+8. Limiting processes resources can be another handy tool in your toolbox. Try running `stress -c 3` and visualize the CPU consumption with `htop`.
+
+![Running stress -c 3](./stress_c_3.png)
+
+
+Now, execute `taskset --cpu-list 0,2 stress -c 3` and visualize it.
+
+![Running stress -c 3 with taskset](./stress_c_3_taskset.png)
+
+Is stress taking three CPUs? No. Why not? Because `taskset` is restricting the number of CPUs used. Read man taskset. 
+
+Challenge: achieve the same using cgroups. Try limiting the memory consumption of stress -m.
+
+```
+# TODO: cannot make cgroups work in Ubuntu 22.04.1 LTS.
+```
+
+9. (Advanced) The command `curl ipinfo.io` performs a HTTP request and fetches information about your public IP. Open Wireshark and try to sniff the request and reply packets that `curl` sent and received. (Hint: Use the `http` filter to just watch HTTP packets).
+
+```
+# TODO
+```
