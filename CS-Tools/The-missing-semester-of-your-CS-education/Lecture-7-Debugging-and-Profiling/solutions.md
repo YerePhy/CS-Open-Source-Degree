@@ -151,3 +151,10 @@ We can do better than that by memoizing the functions. Uncomment the commented l
 
 ![Graph generated after memoization:](./pycallgraph_memoization.png)
 
+
+7. A common issue is that a port you want to listen on is already taken by another process. Let’s learn how to discover that process pid. First execute `python -m http.server 4444` to start a minimal web server listening on port `4444`. On a separate terminal run `lsof | grep LISTEN` to print all listening processes and ports. Find that process pid and terminate it by running `kill <PID>`.
+
+```
+lsof | grep 'python .*LISTEN)' | awk '{ print $2 }' | kill
+```
+
