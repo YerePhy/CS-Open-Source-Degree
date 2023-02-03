@@ -1,0 +1,2 @@
+matplotlib==3.6.3; python_version=='3.9'
+Pillow==9.4.0; python_version=='3.9'
