@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cd $(pwd)/CS-Tools/The-missing-semester-of-your-CS-education/Lecture-8-Metaprogramming
+
+make clean
+make paper.pdf 2>&1
+
+if [ "$?" -ne 0 ]; then
+    echo "Failed build."
+    exit 1
+else
+    echo "Successfully build."
+fi
