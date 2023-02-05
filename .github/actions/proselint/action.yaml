@@ -1,0 +1,22 @@
+name: 'proselint'
+description: 'Lint Markdown Files'
+inputs:
+  scandir:
+    description: "Directory to be searched for files. Defaults to ."
+    required: false
+    default: "."
+  ignore_names:
+    description: "Names to ignore when running linters."
+    required: false
+    default: ''
+  ignore_paths:
+    description: "Paths to ignore when running linters."
+    required: false
+    default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.scandir }}
+    - ${{ inputs.ignore_names }}
+    - ${{ inputs.ignore_paths }}
