@@ -30,7 +30,7 @@ See solution to exercise 4.
 
 I've built a workflow that performs two jobs: proselint and shellcheck. The former one is custom and the later is from [here](https://github.com/marketplace/actions/shellcheck).
 
-- [Dokcerfile](../../../.github/actions/proselint/Dockerfile)
+- [Dockerfile](../../../.github/actions/proselint/Dockerfile)
 - [action.yaml](../../../.github/actions/proselint/action.yaml)
 - [entrypoint.sh](../../../.github/actions/proselint/entrypoint.sh)
 
