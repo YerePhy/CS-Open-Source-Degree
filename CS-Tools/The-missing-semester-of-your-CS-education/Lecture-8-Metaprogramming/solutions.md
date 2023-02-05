@@ -22,3 +22,32 @@ clean:
 - **comparison**: ensure compatibility with version `x.0.0` and then your application will be compatible with `x.y.z`. For example, there are a lot of libraries that depend on python 3 (note that the minor nor patch are specified).
 - **multiple**: test your application against majors `x.0.0` and `X.0.0` (`x` < `X`) of a dependency, if it (luckily) works, then use comparison specification so the users of both majors can use your library, `* < x.0.0, > X.0.0`.
 
+3. Set up a simple auto-published page using GitHub Pages. Add a GitHub Action to the repository to run shellcheck on any shell files in that repository (here is one way to do it). Check that it works! 
+
+See solution to exercise 4.
+
+4. Build your own GitHub action to run proselint or write-good on all the .md files in the repository. Enable it in your repository, and check that it works by filing a pull request with a typo in it.
+
+I've built a workflow that performs two jobs: proselint and shellcheck. The former one is custom and the later is from [here](https://github.com/marketplace/actions/shellcheck).
+
+Dockerfile:
+
+***
+
+[Dokcerfile](../../../.github/actions/proselint/Dockerfile)
+
+***
+
+action.yaml
+
+***
+
+[action.yaml](../../../.github/actions/proselint/action.yaml)
+
+***
+
+entrypoint.sh
+
+[entrypoint.sh](../../../.github/actions/proselint/entrypoint.sh)
+
+***
