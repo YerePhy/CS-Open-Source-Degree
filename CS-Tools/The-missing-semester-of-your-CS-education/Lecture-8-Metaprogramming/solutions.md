@@ -33,3 +33,5 @@ I've built a workflow that performs two jobs: proselint and shellcheck. The form
 - [Dokcerfile](../../../.github/actions/proselint/Dockerfile)
 - [action.yaml](../../../.github/actions/proselint/action.yaml)
 - [entrypoint.sh](../../../.github/actions/proselint/entrypoint.sh)
+
+However, the custom action needs to be improved in order to exit when `proselint` detects bad writting practices.
