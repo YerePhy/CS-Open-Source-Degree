@@ -20,5 +20,5 @@ $$H(X_1, ..., X_n) = n\log_2 M.$$
 
 In our particular case, $n=4, M=10^5$, so:
 
-$$H = 4\log_2 10^5 \approx 66.4 \; \text{bits}.$$
+$$H = 4\log_2 10^5 \approx 66.4 \text{ bits}.$$
 
