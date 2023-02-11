@@ -26,19 +26,19 @@ $$H = 4\log_2 10^5 \approx 66.4 \text{ bits}.$$
 
 The total number of alphanumeric characters are 62 (including lower and upper case), the assumptions made in the exercise 1 still hold here, however, $n=8 and M=62$ then:
 
-$$H = 8\log_2 62 \apporx 47.6 \text{ bits}.$$
+$$H = 8\log_2 62 \approx 47.6 \text{ bits}.$$
 
 3. Which is the strongest password? The first one since it has a higher entropy.
 
 4. Suppose an attacker can try guessing 10,000 passwords per second. On average, how long will it take to break each of the passwords?
 
-The number of possibilities are $M^n$, let be the ratio of passwords per second $P[s^{-1}]$ or $86400P[\text{ days}^{-1}]$ and let be the days required to try all the possible passwords $D[\text{ days}]$. In most casses, an attacker has not to try all the passwords but a fraction $f_p \in (0,1]$ of them, so if we change the interpretation of $D[\text{ days}]$ to be the number of day required to try the fraction of passwords, its easy to come up with:
+The number of possibilities are $M^n$, let be the ratio of passwords per second $P[s^{-1}]$ or $86400P[\text{days}^{-1}]$ and let be the days required to try all the possible passwords $D[\text{days}]$. In most casses, an attacker has not to try all the passwords but a fraction $f_p \in (0,1]$ of them, so if we change the interpretation of $D[\text{days}]$ to be the number of day required to try the fraction of passwords, its easy to come up with:
 
-$$D = \frac{f_p M^n}{86400P}[\text{ days}].$$
+$$D = \frac{f_p M^n}{86400P}[\text{days}].$$
 
-| Case       | Length of password ($$n$$) | Cardinilaty ($$M$$) | Possibilities ($$M^n$$) | Fraction of possibilities ($$f_p$$) | Days                |
-|------------|----------------------------|---------------------|-------------------------|-------------------------------------|---------------------|
-| Exercise 1 | $$4$$                      | $$100000$$          | $$10^^{20}$$            | $$1/2$$                             | $$5\times 10^{10}$$ |
-| Exercise 1 | $$4$$                      | $$100000$$          | $$10^^{20}$$            | $$1$$                               | $$10^{11}$$         |
-| Exercise 2 | $$8$$                      | $$62$$              | $$2\times 10^{12}$$     | $$1/2$$                             | $$1\times 10^5$$    |
-| Exercise 2 | $$62$$                     | $$62$$              | $$2\times 10^{12}$$     | $$1$$                               | $$2\times 10^^5     |
+| Exercise | Length of password (n) | Cardinilaty (M) | Possibilities (M^n) | Fraction of possibilities (f_p) | Days              |
+|----------|------------------------|-----------------|---------------------|---------------------------------|-------------------|
+| 1        | $4$                    | $100000$        | $10^{20}$           | $1/2$                           | $5\times 10^{10}$ |
+| 1        | $4$                    | $100000$        | $10^{20}$           | $1$                             | $10^{11}$         |
+| 2        | $8$                    | $62$            | $2\times 10^{12}$   | $1/2$                           | $1\times 10^5$    |
+| 2        | $62$                   | $62$            | $2\times 10^{12}$   | $1$                             | $2\times 10^{5}$  |
