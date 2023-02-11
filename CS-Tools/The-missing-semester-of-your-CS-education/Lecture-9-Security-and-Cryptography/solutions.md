@@ -42,3 +42,19 @@ $$D = \frac{f_p M^n}{86400P}[\text{days}].$$
 | 1        | $4$                    | $100000$        | $10^{20}$           | $1$                             | $10^{11}$         |
 | 2        | $8$                    | $62$            | $2\times 10^{12}$   | $1/2$                           | $1\times 10^5$    |
 | 2        | $62$                   | $62$            | $2\times 10^{12}$   | $1$                             | $2\times 10^{5}$  |
+
+## Cryptographic hash functions
+
+Download a Debian image from a mirror (e.g. from this Argentinean mirror). Cross-check the hash (e.g. using the sha256sum command) with the hash retrieved from the official Debian site (e.g. this file hosted at debian.org, if you’ve downloaded the linked file.
+
+The SHA 256 is `e482910626b30f9a7de9b0cc142c3d4a079fbfa96110083be1d0b473671ce08d` as expected.
+
+## Symmetric cryptography
+
+Encrypt a file with AES encryption, using OpenSSL: `openssl aes-256-cbc -salt -in {input filename} -out {output filename}`. Look at the contents using cat or hexdump. Decrypt it with `openssl aes-256-cbc -d -in {input filename} -out {output filename}` and confirm that the contents match the original using cmp. 
+
+Done with `myfile.txt`.
+
+## Asymetric cryptography
+
+
