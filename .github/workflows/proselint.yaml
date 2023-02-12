@@ -1,0 +1,37 @@
+on:
+  push:
+    branches:
+      - feature/the-missing-semester-of-your-CS-edu
+
+name: "Linters"
+permissions: {}
+
+jobs:
+  proselint:
+    name:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Proselint
+        id: proselint
+        uses: ./.github/actions/proselint
+        with:
+          scandir: "./"
+          ignore_names: >-
+            solutions.md
+            FAQ.md
+            PROJECTS.md
+            HELP.md
+            CURRICULAR_GUIDELINES.md
+            CONTRIBUTING.md
+          ignore_paths: >-
+            extras
+            coursepages
+            .github
+  shellcheck:
+    name: Shellcheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: "ShellCheck"
+        uses: ludeeus/action-shellcheck@master

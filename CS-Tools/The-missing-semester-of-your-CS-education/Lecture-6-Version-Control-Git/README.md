@@ -1,0 +1,1 @@
+I've been using Git for 2 years so I've skipped most of the exercises of this lesson. However, I've read several chapters of Git Pro in order to know bit more abour rewriting history, the underlaying data structures of Git and advanced features like client side hooks and filters.
